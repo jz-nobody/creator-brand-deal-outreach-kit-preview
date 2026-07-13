@@ -4,6 +4,8 @@ Five short, editable message samples for independent creators handling a brand c
 
 [View the interactive product page](https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/)
 
+[Run the free Sponsor-Fit Quick Check](https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/#fit-check)
+
 [Download all five samples as a ZIP](https://github.com/jz-nobody/creator-brand-deal-outreach-kit-preview/releases/download/free-preview-v1.0.0/creator-brand-deal-outreach-free-preview.zip)
 
 ## What is included
@@ -18,7 +20,7 @@ Each file contains one complete sample. Replace every `[bracketed field]`, remov
 
 ## What this preview does not include
 
-This sample intentionally excludes the other 20 messages and the full product's sponsor-fit scorecard, multi-step follow-up sequences, pricing worksheet, deliverables and approval log, payment follow-up library, and campaign retrospective.
+This sample intentionally excludes the other 20 messages and the full product's eight-factor /16 sponsor-fit scorecard, disqualifiers, research notes, multi-step follow-up sequences, pricing worksheet, deliverables and approval log, payment follow-up library, and campaign retrospective. The public page's six-factor /12 Quick Check is a smaller local-only preview, not the full scorecard.
 
 Get the complete 25-message kit here:
 

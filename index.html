@@ -273,12 +273,234 @@
       letter-spacing: -0.05em;
     }
 
+    #fit-check .section-heading { max-width: 1400px; }
+    #fit-check .section-heading h2 { font-size: clamp(2.2rem, 4vw, 3.4rem); }
+
     .section-heading p {
       max-width: 760px;
       margin: 18px auto 0;
       color: var(--muted);
       font-size: 1.08rem;
     }
+
+    .fit-workbench {
+      display: grid;
+      grid-template-columns: minmax(0, 1.18fr) minmax(390px, 0.82fr);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(6, 29, 45, 0.46);
+      overflow: hidden;
+    }
+
+    .fit-form {
+      min-width: 0;
+      padding: clamp(22px, 3vw, 38px);
+    }
+
+    .fast-stop {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(330px, 0.92fr);
+      gap: 18px 28px;
+      align-items: center;
+      padding: 22px;
+      border: 1px solid rgba(105, 213, 201, 0.28);
+      border-radius: var(--control-radius);
+      background: rgba(8, 40, 59, 0.5);
+    }
+
+    .fast-stop h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 1.25;
+    }
+
+    .fast-stop p {
+      grid-column: 1 / -1;
+      margin: -6px 0 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .fit-segments {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      min-width: 0;
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .fit-choice {
+      position: relative;
+      min-width: 0;
+      cursor: pointer;
+    }
+
+    .fit-choice + .fit-choice { border-left: 1px solid rgba(105, 213, 201, 0.52); }
+
+    .fit-choice input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .fit-choice span {
+      min-height: 52px;
+      display: grid;
+      place-items: center;
+      padding: 8px 10px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      font-weight: 760;
+      text-align: center;
+      transition: background 160ms ease, color 160ms ease;
+    }
+
+    .fit-choice:hover span { background: rgba(105, 213, 201, 0.08); color: var(--text); }
+    .fit-choice input:checked + span { background: var(--accent-soft); color: var(--bg); }
+    .fit-choice input:focus-visible + span { outline: 3px solid var(--accent-soft); outline-offset: -5px; }
+
+    .score-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px 24px;
+      margin: 26px 0 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .score-legend strong {
+      color: var(--accent-soft);
+      font-size: 1rem;
+    }
+
+    .score-row {
+      display: grid;
+      grid-template-columns: minmax(190px, 0.88fr) minmax(300px, 1.12fr);
+      gap: 22px;
+      align-items: center;
+      padding: 18px 0;
+      border-top: 1px solid rgba(105, 213, 201, 0.2);
+    }
+
+    .score-label strong {
+      display: block;
+      font-size: 1rem;
+      line-height: 1.28;
+    }
+
+    .score-label span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.35;
+    }
+
+    .score-options .fit-choice span {
+      min-height: 50px;
+      font-size: 1.05rem;
+    }
+
+    .fit-result {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      padding: clamp(30px, 4vw, 56px);
+      border-left: 1px solid var(--border);
+      background: rgba(6, 29, 45, 0.78);
+    }
+
+    .fit-progress {
+      color: var(--accent-soft);
+      font-size: 0.88rem;
+      font-weight: 780;
+      letter-spacing: 0.02em;
+    }
+
+    .fit-score {
+      margin: 14px 0 0;
+      color: var(--text);
+      font-size: clamp(3.8rem, 7vw, 6.2rem);
+      font-weight: 820;
+      line-height: 1;
+      letter-spacing: -0.06em;
+    }
+
+    .fit-score span { color: var(--accent-soft); }
+
+    .fit-result h3 {
+      margin: 24px 0 0;
+      font-size: clamp(2rem, 3.5vw, 3.3rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .fit-result-copy {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .fit-facts {
+      margin-top: 30px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(105, 213, 201, 0.24);
+    }
+
+    .fit-facts h4 {
+      margin: 0;
+      color: var(--accent-soft);
+      font-size: 1.05rem;
+    }
+
+    .fit-facts ol {
+      margin: 16px 0 0;
+      padding-left: 1.4em;
+      color: var(--text);
+      font-size: 0.94rem;
+    }
+
+    .fit-facts li + li { margin-top: 10px; }
+
+    .fit-reset {
+      align-self: flex-start;
+      min-height: 46px;
+      margin-top: 26px;
+      padding: 10px 22px;
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      background: transparent;
+      color: var(--accent-soft);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 760;
+      cursor: pointer;
+    }
+
+    .fit-reset:hover { background: rgba(105, 213, 201, 0.08); }
+
+    .fit-actions {
+      display: grid;
+      gap: 14px;
+      margin-top: auto;
+      padding-top: 34px;
+    }
+
+    .fit-privacy,
+    .fit-boundary {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    .fit-privacy { margin: 16px 0 0; }
+    .fit-boundary { margin: 24px auto 0; }
 
     .sample-workspace {
       display: grid;
@@ -578,6 +800,8 @@
 
       .hero-copy { max-width: 900px; }
       .hero-media { max-width: 850px; }
+      .fit-workbench { grid-template-columns: 1fr; }
+      .fit-result { min-height: 520px; border-left: 0; border-top: 1px solid var(--border); }
       .sample-workspace { grid-template-columns: 1fr; }
       .sample-tabs { grid-template-columns: repeat(5, minmax(210px, 1fr)); overflow-x: auto; padding-bottom: 10px; }
       .sample-tabs::before { display: none; }
@@ -607,6 +831,13 @@
       .section { padding-block: 78px; }
       .section-heading { margin-bottom: 38px; text-align: left; }
       .section-heading p { margin-inline: 0; }
+      .fast-stop { grid-template-columns: 1fr; }
+      .fast-stop p { grid-column: auto; margin-top: 0; }
+      .score-legend { justify-content: flex-start; }
+      .score-row { grid-template-columns: 1fr; gap: 12px; padding-block: 20px; }
+      .fit-result { min-height: auto; padding: 30px 22px; }
+      .fit-actions { margin-top: 0; }
+      .fit-actions .button { width: 100%; }
       .sample-workspace { gap: 24px; }
       .sample-preview { min-height: 560px; }
       .sample-preview-head { padding: 22px 20px 18px; }
@@ -653,6 +884,7 @@
     <div class="shell header-inner">
       <a class="wordmark" href="#top" aria-label="Creator Brand Deal Outreach Kit home">Creator Brand Deal Outreach Kit</a>
       <nav class="main-nav" aria-label="Page navigation">
+        <a href="#fit-check">Fit Check</a>
         <a href="#free-samples">Free Samples</a>
         <a href="#inside-kit">Inside the Full Kit</a>
         <a href="#limits">Important Limits</a>
@@ -685,6 +917,104 @@
         <p>Newsletter writers • Podcasters • YouTubers • Short-form creators • UGC creators. Use the closest scenario, replace every visible placeholder, remove what does not apply, and keep every claim grounded in evidence you can verify.</p>
       </div>
     </aside>
+
+    <section class="section" id="fit-check" aria-labelledby="fit-check-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <h2 id="fit-check-heading">Should you pitch this sponsor? Run a 2-minute fit check.</h2>
+          <p>Score six facts before you invest time in outreach.</p>
+        </div>
+
+        <div class="fit-workbench">
+          <form class="fit-form" id="sponsor-fit-form">
+            <div class="fast-stop">
+              <h3 id="fast-stop-label">Any fast-stop condition?</h3>
+              <div class="fit-segments" role="radiogroup" aria-labelledby="fast-stop-label" aria-describedby="fast-stop-help">
+                <label class="fit-choice"><input type="radio" name="fast-stop" value="yes"><span>Yes</span></label>
+                <label class="fit-choice"><input type="radio" name="fast-stop" value="no"><span>No</span></label>
+                <label class="fit-choice"><input type="radio" name="fast-stop" value="not-sure"><span>Not sure</span></label>
+              </div>
+              <p id="fast-stop-help">Passwords or deposits; an unverifiable sender, brand, campaign, or payment entity; misleading or undisclosed claims; an unsafe or prohibited product; or undefined deliverables, rights, amount, or payment timing.</p>
+            </div>
+
+            <div class="score-legend" aria-hidden="true"><span><strong>0</strong> No</span><span><strong>1</strong> Unclear</span><span><strong>2</strong> Yes</span></div>
+
+            <div class="score-row" data-fit-factor data-factor-label="Audience fit">
+              <div class="score-label" id="factor-audience-label"><strong>Audience fit</strong><span>Little overlap → clear relevance</span></div>
+              <div class="fit-segments score-options" role="radiogroup" aria-labelledby="factor-audience-label">
+                <label class="fit-choice"><input type="radio" name="factor-audience" value="0" aria-label="Audience fit: 0, little or no overlap"><span>0</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-audience" value="1" aria-label="Audience fit: 1, partial overlap"><span>1</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-audience" value="2" aria-label="Audience fit: 2, clear relevant overlap"><span>2</span></label>
+              </div>
+            </div>
+
+            <div class="score-row" data-fit-factor data-factor-label="Product familiarity">
+              <div class="score-label" id="factor-familiarity-label"><strong>Product familiarity</strong><span>Unknown → genuine experience</span></div>
+              <div class="fit-segments score-options" role="radiogroup" aria-labelledby="factor-familiarity-label">
+                <label class="fit-choice"><input type="radio" name="factor-familiarity" value="0" aria-label="Product familiarity: 0, unknown or unverified"><span>0</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-familiarity" value="1" aria-label="Product familiarity: 1, researched but not used"><span>1</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-familiarity" value="2" aria-label="Product familiarity: 2, genuine prior experience"><span>2</span></label>
+              </div>
+            </div>
+
+            <div class="score-row" data-fit-factor data-factor-label="Creative fit">
+              <div class="score-label" id="factor-creative-label"><strong>Creative fit</strong><span>Forced → natural to your format</span></div>
+              <div class="fit-segments score-options" role="radiogroup" aria-labelledby="factor-creative-label">
+                <label class="fit-choice"><input type="radio" name="factor-creative" value="0" aria-label="Creative fit: 0, forced or off-format"><span>0</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-creative" value="1" aria-label="Creative fit: 1, adaptable"><span>1</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-creative" value="2" aria-label="Creative fit: 2, natural to your format"><span>2</span></label>
+              </div>
+            </div>
+
+            <div class="score-row" data-fit-factor data-factor-label="Reputation / safety">
+              <div class="score-label" id="factor-safety-label"><strong>Reputation / safety</strong><span>Material concern → credible and verified</span></div>
+              <div class="fit-segments score-options" role="radiogroup" aria-labelledby="factor-safety-label">
+                <label class="fit-choice"><input type="radio" name="factor-safety" value="0" aria-label="Reputation and safety: 0, material concern"><span>0</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-safety" value="1" aria-label="Reputation and safety: 1, mixed or unclear"><span>1</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-safety" value="2" aria-label="Reputation and safety: 2, credible and verified"><span>2</span></label>
+              </div>
+            </div>
+
+            <div class="score-row" data-fit-factor data-factor-label="Scope &amp; rights clarity">
+              <div class="score-label" id="factor-scope-label"><strong>Scope &amp; rights clarity</strong><span>Vague or broad → specific terms</span></div>
+              <div class="fit-segments score-options" role="radiogroup" aria-labelledby="factor-scope-label">
+                <label class="fit-choice"><input type="radio" name="factor-scope" value="0" aria-label="Scope and rights clarity: 0, vague or broad"><span>0</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-scope" value="1" aria-label="Scope and rights clarity: 1, partially clear"><span>1</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-scope" value="2" aria-label="Scope and rights clarity: 2, specific terms"><span>2</span></label>
+              </div>
+            </div>
+
+            <div class="score-row" data-fit-factor data-factor-label="Budget / payment">
+              <div class="score-label" id="factor-payment-label"><strong>Budget / payment</strong><span>Missing → amount and timing clear</span></div>
+              <div class="fit-segments score-options" role="radiogroup" aria-labelledby="factor-payment-label">
+                <label class="fit-choice"><input type="radio" name="factor-payment" value="0" aria-label="Budget and payment: 0, missing or implausible"><span>0</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-payment" value="1" aria-label="Budget and payment: 1, needs clarification"><span>1</span></label>
+                <label class="fit-choice"><input type="radio" name="factor-payment" value="2" aria-label="Budget and payment: 2, amount and timing are clear"><span>2</span></label>
+              </div>
+            </div>
+          </form>
+
+          <aside class="fit-result" id="fit-result" aria-live="polite" aria-atomic="false">
+            <div class="fit-progress" id="fit-progress">0 of 6 answered</div>
+            <p class="fit-score"><span id="fit-score">—</span> / 12</p>
+            <h3 id="fit-result-title">Complete the check</h3>
+            <p class="fit-result-copy" id="fit-result-copy">Choose one answer for the fast-stop gate and each factor. No result appears until all required fields are complete.</p>
+            <div class="fit-facts">
+              <h4>Facts to close</h4>
+              <ol id="fit-facts"></ol>
+            </div>
+            <button class="fit-reset" id="fit-reset" type="button">Reset</button>
+            <div class="fit-actions">
+              <a class="button button-paid" href="https://www.patreon.com/Userwang/posts/creator-brand-25-163665957" aria-label="Get the complete 25-message Creator Brand Deal Outreach Kit for $5 on Patreon">Get the Complete Kit — $5</a>
+              <a class="button button-free" href="#free-samples">Preview 5 Free Messages</a>
+            </div>
+            <p class="fit-privacy">Your choices stay in this page and are not saved or sent anywhere.</p>
+          </aside>
+        </div>
+
+        <p class="fit-boundary">A prioritization aid, not a prediction of a reply, deal, rate, payment, renewal, or income.</p>
+      </div>
+    </section>
 
     <section class="section section-alt" id="free-samples" aria-labelledby="samples-heading">
       <div class="shell">
@@ -783,7 +1113,7 @@
         <div>
           <h2 id="limits-heading">Built for accurate, human-reviewed outreach</h2>
           <p>Every message must be adapted to your real audience, evidence, scope, country, platform rules, and agreement. Do not invent familiarity, product use, results, introductions, deadlines, testimonials, urgency, payment status, or campaign performance.</p>
-          <p>This kit is not legal, tax, accounting, collections, or platform-policy advice. It does not guarantee replies, brand deals, payment, renewal, a particular rate, or income.</p>
+          <p>This kit is not legal, tax, accounting, collections, or platform-policy advice. It does not guarantee replies, brand deals, payment, renewal, a particular rate, or income. The user is responsible for verifying every claim, recipient, disclosure, term, and message before use.</p>
           <p>Created by the seller, AI-assisted by the user, and manually reviewed for the supplied use case.</p>
         </div>
       </div>
@@ -811,6 +1141,95 @@
   </footer>
 
   <script>
+    const fitForm = document.getElementById("sponsor-fit-form");
+    const fitFactors = Array.from(fitForm.querySelectorAll("[data-fit-factor]"));
+    const fitProgress = document.getElementById("fit-progress");
+    const fitScore = document.getElementById("fit-score");
+    const fitResultTitle = document.getElementById("fit-result-title");
+    const fitResultCopy = document.getElementById("fit-result-copy");
+    const fitFacts = document.getElementById("fit-facts");
+    const fitReset = document.getElementById("fit-reset");
+
+    const fitResultCopyByState = {
+      hold: "The current facts do not support prioritizing this opportunity. Verify the lowest-scored areas before spending time on a custom pitch.",
+      qualify: "The opportunity may be workable, but important facts are still missing. Clarify the lowest-scored areas before writing or pricing.",
+      prioritize: "The fit appears stronger on the information entered. Confirm the brief, decision-maker, rights, and payment terms before proceeding.",
+      pause: "A score cannot clear a safety, identity, disclosure, rights, or payment concern."
+    };
+
+    function replaceFitFacts(items) {
+      fitFacts.replaceChildren(...items.map(item => {
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        return listItem;
+      }));
+    }
+
+    function updateFitCheck() {
+      const fastStop = fitForm.querySelector('input[name="fast-stop"]:checked');
+      const answers = fitFactors.map(factor => {
+        const selected = factor.querySelector('input[type="radio"]:checked');
+        return selected ? {
+          label: factor.dataset.factorLabel,
+          value: Number(selected.value)
+        } : null;
+      });
+      const answered = answers.filter(Boolean).length;
+
+      fitProgress.textContent = `${answered} of ${fitFactors.length} answered`;
+
+      if (!fastStop || answered < fitFactors.length) {
+        fitScore.textContent = "—";
+        if (fastStop && fastStop.value !== "no") {
+          fitResultTitle.textContent = "Pause and verify";
+          fitResultCopy.textContent = "A fast-stop concern needs verification before any score can be used.";
+          replaceFitFacts([]);
+        } else {
+          fitResultTitle.textContent = "Complete the check";
+          fitResultCopy.textContent = "Choose one answer for the fast-stop gate and each factor. No result appears until all required fields are complete.";
+          replaceFitFacts([]);
+        }
+        return;
+      }
+
+      const score = answers.reduce((total, answer) => total + answer.value, 0);
+      const lowFacts = answers
+        .filter(answer => answer.value <= 1)
+        .map(answer => `Clarify: ${answer.label}.`);
+
+      if (fastStop.value !== "no") {
+        fitScore.textContent = "—";
+        fitResultTitle.textContent = "Pause and verify";
+        fitResultCopy.textContent = fitResultCopyByState.pause;
+        replaceFitFacts(lowFacts.slice(0, 3));
+        return;
+      }
+
+      fitScore.textContent = String(score);
+
+      if (score <= 4) {
+        fitResultTitle.textContent = "Hold";
+        fitResultCopy.textContent = fitResultCopyByState.hold;
+      } else if (score <= 8) {
+        fitResultTitle.textContent = "Qualify";
+        fitResultCopy.textContent = fitResultCopyByState.qualify;
+      } else {
+        fitResultTitle.textContent = "Prioritize and verify";
+        fitResultCopy.textContent = fitResultCopyByState.prioritize;
+      }
+
+      replaceFitFacts(lowFacts.slice(0, 3));
+    }
+
+    fitForm.addEventListener("change", updateFitCheck);
+    fitForm.addEventListener("submit", event => event.preventDefault());
+    fitReset.addEventListener("click", () => {
+      fitForm.reset();
+      updateFitCheck();
+    });
+
+    updateFitCheck();
+
     const samples = [
       {
         title: "Open with a verified reason to talk.",
