@@ -2,6 +2,8 @@
 
 Five short, editable message samples for independent creators handling a brand conversation from first contact to a possible renewal.
 
+[Download all five samples as a ZIP](https://github.com/jz-nobody/creator-brand-deal-outreach-kit-preview/releases/download/free-preview-v1.0.0/creator-brand-deal-outreach-free-preview.zip)
+
 ## What is included
 
 1. `01-first-outreach.md` — a focused first-contact email.
@@ -25,4 +27,3 @@ Get the complete 25-message kit here:
 These samples are editable starting points, not legal, tax, accounting, collections, or platform-policy advice. They do not guarantee a reply, brand deal, payment, renewal, rate, or any other result. Use only accurate information and follow the rules that apply to your country, platform, recipient, and agreement.
 
 Created by the seller, AI-assisted by the user, and manually reviewed for this preview.
-
