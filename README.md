@@ -6,6 +6,8 @@ Five short, editable message samples for independent creators handling a brand c
 
 [Run the free Sponsor-Fit Quick Check](https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/#fit-check)
 
+[Read the guide: How to Evaluate a Brand Deal](https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/sponsor-fit-checklist/)
+
 [Download all five samples as a ZIP](https://github.com/jz-nobody/creator-brand-deal-outreach-kit-preview/releases/download/free-preview-v1.0.0/creator-brand-deal-outreach-free-preview.zip)
 
 ## What is included
