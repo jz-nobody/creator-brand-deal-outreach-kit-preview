@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/sitemap.xml

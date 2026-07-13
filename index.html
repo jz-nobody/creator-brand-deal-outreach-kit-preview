@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Brand Deal Outreach Kit | 25 Editable Messages</title>
+  <meta name="description" content="Download five free creator brand-deal message samples, or get 25 editable messages plus scope, approval, payment follow-up, and renewal tools for $5 on Patreon.">
+  <meta name="theme-color" content="#061d2d">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Creator Brand Deal Outreach Kit | 25 Editable Messages">
+  <meta property="og:description" content="Five free samples, or a $5 one-time kit with 25 editable messages and practical workflow files.">
+  <meta property="og:url" content="https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/">
+  <meta property="og:image" content="https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/assets/product-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/">
+  <link rel="icon" type="image/png" href="assets/product-cover.png">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #061d2d;
+      --surface: #08283b;
+      --surface-raised: #0a3046;
+      --text: #f7fbff;
+      --muted: #b8cddd;
+      --accent: #69d5c9;
+      --accent-soft: #a7e8d8;
+      --coral: #ff735f;
+      --coral-hover: #ff846f;
+      --border: rgba(105, 213, 201, 0.34);
+      --max: 1460px;
+      --gutter: 28px;
+      --radius: 18px;
+      --control-radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.58;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent-soft);
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 18px;
+      top: 12px;
+      z-index: 100;
+      transform: translateY(-160%);
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--text);
+      color: var(--bg);
+      font-weight: 800;
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .shell {
+      width: min(var(--max), calc(100% - (var(--gutter) * 2)));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(105, 213, 201, 0.18);
+      background: rgba(6, 29, 45, 0.96);
+      backdrop-filter: blur(14px);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .wordmark {
+      margin-right: auto;
+      text-decoration: none;
+      font-size: clamp(1rem, 2vw, 1.42rem);
+      font-weight: 820;
+      letter-spacing: -0.035em;
+      white-space: nowrap;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .main-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 160ms ease;
+    }
+
+    .main-nav a:hover { color: var(--text); }
+
+    .button {
+      min-height: 52px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border: 1px solid transparent;
+      border-radius: var(--control-radius);
+      text-decoration: none;
+      font-size: 0.94rem;
+      font-weight: 780;
+      line-height: 1.2;
+      text-align: center;
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button-paid {
+      background: var(--coral);
+      color: #fff;
+    }
+
+    .button-paid:hover { background: var(--coral-hover); }
+
+    .button-free {
+      border-color: var(--accent);
+      background: transparent;
+      color: var(--accent-soft);
+    }
+
+    .button-free:hover {
+      background: rgba(105, 213, 201, 0.09);
+      color: #d6fff9;
+    }
+
+    .button-header {
+      min-height: 48px;
+      padding-inline: 20px;
+      white-space: nowrap;
+    }
+
+    .hero {
+      min-height: calc(100vh - 78px);
+      min-height: min(880px, calc(100svh - 78px));
+      display: grid;
+      grid-template-columns: minmax(0, 1.12fr) minmax(430px, 0.88fr);
+      align-items: start;
+      gap: clamp(42px, 5vw, 72px);
+      padding-block: clamp(68px, 9vw, 116px);
+    }
+
+    .hero h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(3.15rem, 5.15vw, 5.15rem);
+      font-weight: 820;
+      line-height: 1.035;
+      letter-spacing: -0.065em;
+    }
+
+    .hero-body {
+      max-width: 720px;
+      margin: 30px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.14rem, 1.8vw, 1.42rem);
+      line-height: 1.5;
+    }
+
+    .hero-flow {
+      max-width: 730px;
+      margin: 18px 0 0;
+      color: var(--accent-soft);
+      font-size: 0.98rem;
+      font-weight: 650;
+    }
+
+    .hero-actions,
+    .final-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .format-line,
+    .microcopy {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .hero-media {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 24px 70px rgba(0, 8, 16, 0.28);
+    }
+
+    .hero-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .audience-band {
+      border-block: 1px solid rgba(105, 213, 201, 0.2);
+      background: var(--surface);
+    }
+
+    .audience-inner {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 42px;
+      align-items: center;
+      padding-block: 34px;
+    }
+
+    .audience-inner h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    .audience-inner p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    section { scroll-margin-top: 96px; }
+
+    .section {
+      padding-block: clamp(84px, 10vw, 142px);
+    }
+
+    .section-alt { background: var(--surface); }
+
+    .section-heading {
+      max-width: 900px;
+      margin: 0 auto 54px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(2.2rem, 4.5vw, 3.75rem);
+      font-weight: 810;
+      line-height: 1.06;
+      letter-spacing: -0.05em;
+    }
+
+    .section-heading p {
+      max-width: 760px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .sample-workspace {
+      display: grid;
+      grid-template-columns: minmax(300px, 0.62fr) minmax(0, 1.38fr);
+      gap: 42px;
+      align-items: start;
+    }
+
+    .sample-tabs {
+      position: relative;
+      display: grid;
+      gap: 12px;
+    }
+
+    .sample-tabs::before {
+      content: "";
+      position: absolute;
+      left: 27px;
+      top: 28px;
+      bottom: 28px;
+      width: 1px;
+      background: var(--accent);
+      opacity: 0.8;
+    }
+
+    .sample-tab {
+      position: relative;
+      width: 100%;
+      min-height: 72px;
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      align-items: center;
+      gap: 18px;
+      padding: 8px 18px 8px 0;
+      border: 1px solid transparent;
+      border-radius: 0 var(--control-radius) var(--control-radius) 0;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.98rem;
+      font-weight: 720;
+      text-align: left;
+      cursor: pointer;
+      transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+    }
+
+    .sample-tab:hover {
+      border-color: var(--accent);
+      background: rgba(105, 213, 201, 0.05);
+    }
+
+    .sample-tab[aria-selected="true"] {
+      background: rgba(105, 213, 201, 0.14);
+      color: #fff;
+    }
+
+    .sample-number {
+      position: relative;
+      z-index: 1;
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--bg);
+      font-size: 1.25rem;
+      font-weight: 850;
+    }
+
+    .sample-preview {
+      min-height: 620px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(6, 29, 45, 0.56);
+      overflow: hidden;
+    }
+
+    .sample-preview-head {
+      padding: 28px 32px 22px;
+      border-bottom: 1px solid rgba(105, 213, 201, 0.18);
+    }
+
+    .sample-preview-head h3 {
+      margin: 0;
+      font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    .sample-preview-head p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .sample-message {
+      margin: 0;
+      padding: 30px 32px 38px;
+      color: #e7f2f8;
+      font: 500 1rem/1.68 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .section-action {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 18px 24px;
+      margin-top: 36px;
+      text-align: center;
+    }
+
+    .section-action .microcopy { max-width: 680px; margin: 0; }
+
+    .kit-rail {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .kit-item {
+      min-height: 244px;
+      padding: 34px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-right: 1px solid rgba(105, 213, 201, 0.24);
+      border-bottom: 1px solid rgba(105, 213, 201, 0.24);
+    }
+
+    .kit-item:nth-child(3n) { border-right: 0; }
+    .kit-item:nth-last-child(-n + 3) { border-bottom: 0; }
+
+    .icon-circle {
+      width: 68px;
+      height: 68px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      color: var(--accent-soft);
+    }
+
+    .icon-circle svg {
+      width: 34px;
+      height: 34px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.9;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .kit-item h3 {
+      margin: 0;
+      font-size: 1.12rem;
+      line-height: 1.28;
+    }
+
+    .kit-item p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.48;
+    }
+
+    .package-format {
+      max-width: 940px;
+      margin: 30px auto 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.94rem;
+    }
+
+    .steps {
+      margin-top: 82px;
+      padding-top: 74px;
+      border-top: 1px solid rgba(105, 213, 201, 0.2);
+    }
+
+    .steps h2 {
+      margin: 0 0 34px;
+      font-size: clamp(2rem, 3.7vw, 3.1rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+      text-align: center;
+    }
+
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      counter-reset: step;
+    }
+
+    .step {
+      padding: 24px 26px;
+      border-left: 1px solid rgba(105, 213, 201, 0.24);
+      counter-increment: step;
+    }
+
+    .step:first-child { border-left: 0; }
+
+    .step::before {
+      content: "0" counter(step);
+      display: block;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-size: 0.86rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+    }
+
+    .step h3 { margin: 0; font-size: 1.05rem; line-height: 1.32; }
+    .step p { margin: 10px 0 0; color: var(--muted); font-size: 0.9rem; line-height: 1.48; }
+
+    .limits {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 28px;
+      align-items: center;
+      padding: clamp(30px, 4vw, 54px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .shield {
+      width: 112px;
+      height: 112px;
+      color: var(--accent-soft);
+    }
+
+    .shield path,
+    .shield polyline {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .limits h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3.3vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .limits p { margin: 16px 0 0; color: var(--muted); }
+    .limits p + p { margin-top: 12px; }
+
+    .final-cta {
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      margin: 0;
+      font-size: clamp(2.35rem, 4.8vw, 4rem);
+      line-height: 1.06;
+      letter-spacing: -0.052em;
+    }
+
+    .final-cta > p {
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .final-actions { justify-content: center; }
+
+    .site-footer {
+      padding-block: 36px;
+      border-top: 1px solid rgba(105, 213, 201, 0.18);
+      color: var(--muted);
+      font-size: 0.84rem;
+      text-align: center;
+    }
+
+    .site-footer p { margin: 6px 0; }
+
+    @media (max-width: 1040px) {
+      .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy { max-width: 900px; }
+      .hero-media { max-width: 850px; }
+      .sample-workspace { grid-template-columns: 1fr; }
+      .sample-tabs { grid-template-columns: repeat(5, minmax(210px, 1fr)); overflow-x: auto; padding-bottom: 10px; }
+      .sample-tabs::before { display: none; }
+      .sample-tab { min-width: 210px; grid-template-columns: 46px 1fr; border-radius: var(--control-radius); }
+      .sample-number { width: 46px; height: 46px; font-size: 1rem; }
+      .kit-rail { grid-template-columns: repeat(2, 1fr); }
+      .kit-item:nth-child(n) { border-right: 1px solid rgba(105, 213, 201, 0.24); border-bottom: 1px solid rgba(105, 213, 201, 0.24); }
+      .kit-item:nth-child(2n) { border-right: 0; }
+      .kit-item:nth-last-child(-n + 2) { border-bottom: 0; }
+      .step-grid { grid-template-columns: repeat(2, 1fr); }
+      .step:nth-child(3) { border-left: 0; }
+      .step:nth-child(n + 3) { border-top: 1px solid rgba(105, 213, 201, 0.24); }
+    }
+
+    @media (max-width: 760px) {
+      :root { --gutter: 18px; }
+      body { font-size: 17px; }
+      .header-inner { min-height: 70px; gap: 12px; }
+      .wordmark { max-width: 48vw; white-space: normal; line-height: 1.05; }
+      .main-nav { display: none; }
+      .button-header { min-height: 44px; padding: 10px 13px; font-size: 0.78rem; }
+      .hero { padding-block: 58px 74px; }
+      .hero h1 { font-size: clamp(2.7rem, 13vw, 4.4rem); }
+      .hero-body { margin-top: 22px; font-size: 1.08rem; }
+      .hero-actions .button { width: 100%; }
+      .audience-inner { grid-template-columns: 1fr; gap: 12px; }
+      .section { padding-block: 78px; }
+      .section-heading { margin-bottom: 38px; text-align: left; }
+      .section-heading p { margin-inline: 0; }
+      .sample-workspace { gap: 24px; }
+      .sample-preview { min-height: 560px; }
+      .sample-preview-head { padding: 22px 20px 18px; }
+      .sample-message { padding: 24px 20px 30px; font-size: 0.88rem; }
+      .section-action { justify-content: stretch; }
+      .section-action .button { width: 100%; }
+      .kit-rail { grid-template-columns: 1fr; }
+      .kit-item:nth-child(n) { min-height: 220px; border-right: 0; border-bottom: 1px solid rgba(105, 213, 201, 0.24); }
+      .kit-item:last-child { border-bottom: 0; }
+      .step-grid { grid-template-columns: 1fr; }
+      .step:nth-child(n) { border-left: 0; border-top: 1px solid rgba(105, 213, 201, 0.24); }
+      .step:first-child { border-top: 0; }
+      .limits { grid-template-columns: 1fr; text-align: left; }
+      .shield { width: 86px; height: 86px; }
+      .final-actions .button { width: 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Creator Brand Deal Outreach Kit",
+      "description": "Twenty-five editable brand-deal messages plus sponsor-fit, scope, approval, payment follow-up, and campaign retrospective worksheets.",
+      "image": "https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/assets/product-cover.png",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.patreon.com/Userwang/posts/creator-brand-25-163665957",
+        "priceCurrency": "USD",
+        "price": "5.00",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Creator Brand Deal Outreach Kit home">Creator Brand Deal Outreach Kit</a>
+      <nav class="main-nav" aria-label="Page navigation">
+        <a href="#free-samples">Free Samples</a>
+        <a href="#inside-kit">Inside the Full Kit</a>
+        <a href="#limits">Important Limits</a>
+      </nav>
+      <a class="button button-paid button-header" href="https://www.patreon.com/Userwang/posts/creator-brand-25-163665957" aria-label="Get the complete 25-message Creator Brand Deal Outreach Kit for $5 on Patreon">Get the Complete Kit — $5</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="shell hero" id="top">
+      <div class="hero-copy">
+        <h1>Brand outreach without the blank-page spiral.</h1>
+        <p class="hero-body">A no-code toolkit for independent creators who need practical starting points for sponsor fit, outreach, follow-up, deal terms, approvals, payment reminders, and renewal learning.</p>
+        <p class="hero-flow">Qualify the opportunity. Write a focused pitch. Confirm scope and rights. Track approvals. Follow up on payment with facts.</p>
+        <div class="hero-actions">
+          <a class="button button-paid" href="https://www.patreon.com/Userwang/posts/creator-brand-25-163665957" aria-label="Get the complete 25-message Creator Brand Deal Outreach Kit for $5 on Patreon">Get the Complete Kit — $5</a>
+          <a class="button button-free" href="https://github.com/jz-nobody/creator-brand-deal-outreach-kit-preview/releases/download/free-preview-v1.0.0/creator-brand-deal-outreach-free-preview.zip" aria-label="Download 5 free creator brand-deal message samples from GitHub">Download 5 Free Samples</a>
+        </div>
+        <p class="format-line">$5 one-time • Plain Markdown • Edit in Google Docs, Notion, Word, or any text editor</p>
+        <p class="microcopy">Free preview: five standalone samples. Complete kit: 25 messages plus the worksheets that connect the workflow.</p>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/product-cover.png" width="1600" height="900" alt="Creator Brand Deal Outreach Kit cover showing 25 messages, scope worksheet, payment follow-up, and a $5 one-time price">
+      </figure>
+    </section>
+
+    <aside class="audience-band" aria-labelledby="audience-heading">
+      <div class="shell audience-inner">
+        <h2 id="audience-heading">Built for independent creator workflows</h2>
+        <p>Newsletter writers • Podcasters • YouTubers • Short-form creators • UGC creators. Use the closest scenario, replace every visible placeholder, remove what does not apply, and keep every claim grounded in evidence you can verify.</p>
+      </div>
+    </aside>
+
+    <section class="section section-alt" id="free-samples" aria-labelledby="samples-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <h2 id="samples-heading">Five moments, five ready-to-edit messages</h2>
+          <p>The free preview includes one complete sample for each scenario. These are working starting points—not fragments, screenshots, or locked previews.</p>
+        </div>
+
+        <div class="sample-workspace">
+          <div class="sample-tabs" role="tablist" aria-label="Free message samples">
+            <button class="sample-tab" type="button" role="tab" id="sample-tab-0" aria-controls="sample-panel" aria-selected="true" data-sample="0"><span class="sample-number">1</span><span>First outreach</span></button>
+            <button class="sample-tab" type="button" role="tab" id="sample-tab-1" aria-controls="sample-panel" aria-selected="false" data-sample="1" tabindex="-1"><span class="sample-number">2</span><span>One respectful follow-up</span></button>
+            <button class="sample-tab" type="button" role="tab" id="sample-tab-2" aria-controls="sample-panel" aria-selected="false" data-sample="2" tabindex="-1"><span class="sample-number">3</span><span>Confirm scope and fee</span></button>
+            <button class="sample-tab" type="button" role="tab" id="sample-tab-3" aria-controls="sample-panel" aria-selected="false" data-sample="3" tabindex="-1"><span class="sample-number">4</span><span>Decline a low budget</span></button>
+            <button class="sample-tab" type="button" role="tab" id="sample-tab-4" aria-controls="sample-panel" aria-selected="false" data-sample="4" tabindex="-1"><span class="sample-number">5</span><span>Renew after results</span></button>
+          </div>
+
+          <article class="sample-preview" id="sample-panel" role="tabpanel" aria-labelledby="sample-tab-0" tabindex="0">
+            <header class="sample-preview-head">
+              <h3 id="sample-title">Open with a verified reason to talk.</h3>
+              <p id="sample-use">Use when: You have a specific concept and can substantiate why it may fit the brand.</p>
+            </header>
+            <pre class="sample-message" id="sample-message"></pre>
+          </article>
+        </div>
+
+        <div class="section-action">
+          <a class="button button-free" href="https://github.com/jz-nobody/creator-brand-deal-outreach-kit-preview/releases/download/free-preview-v1.0.0/creator-brand-deal-outreach-free-preview.zip" aria-label="Download 5 free creator brand-deal message samples from GitHub">Download 5 Free Samples</a>
+          <p class="microcopy">The free ZIP contains these five editable Markdown samples and a README. It does not include the other 20 messages or the full workflow worksheets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="inside-kit" aria-labelledby="kit-heading">
+      <div class="shell">
+        <div class="section-heading">
+          <h2 id="kit-heading">What the full kit adds</h2>
+          <p>The full kit combines 25 editable messages with practical files for qualification, scope, delivery, payment follow-up, and campaign learning.</p>
+        </div>
+
+        <div class="kit-rail">
+          <article class="kit-item">
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2.8h8l4 4V21H6z"/><path d="M14 2.8V7h4M9 12h6M9 16h6"/></svg></span>
+            <h3>25 editable messages</h3>
+            <p>12 first-contact and deal messages, 7 follow-ups, and 6 factual invoice and payment messages.</p>
+          </article>
+          <article class="kit-item">
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="m15 9 4-4M16 5h3v3"/></svg></span>
+            <h3>Sponsor-fit scorecard</h3>
+            <p>Assess audience fit, evidence, scope clarity, sender legitimacy, payment path, and disqualifiers.</p>
+          </article>
+          <article class="kit-item">
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h2M14 11h2M8 15h2M14 15h2"/></svg></span>
+            <h3>Deal scope &amp; pricing worksheet</h3>
+            <p>Record deliverables, revisions, rights, paid media, exclusivity, expenses, triggers, and terms.</p>
+          </article>
+          <article class="kit-item">
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 4h6l1 2h3v15H5V6h3z"/><path d="m9 14 2 2 4-5"/></svg></span>
+            <h3>Deliverables &amp; approval log</h3>
+            <p>Keep owners, changes, approvals, publication details, invoice information, and status together.</p>
+          </article>
+          <article class="kit-item">
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M14.5 8.7c-.5-.7-1.3-1.1-2.4-1.1-1.4 0-2.4.7-2.4 1.8 0 2.8 5.2 1.4 5.2 4.5 0 1.3-1.1 2.3-2.8 2.3-1.2 0-2.2-.4-2.8-1.2M12 6v12"/></svg></span>
+            <h3>Payment follow-up library</h3>
+            <p>Use accurate invoice numbers, amounts, due dates, and payment status at each follow-up point.</p>
+          </article>
+          <article class="kit-item">
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 20V10M10 20V5M15 20v-8M20 20V3"/></svg></span>
+            <h3>Campaign retrospective</h3>
+            <p>Review delivery, measurement windows, audience response, terms, payment, and renewal learning.</p>
+          </article>
+        </div>
+
+        <p class="package-format">Complete package: README, seven editable workflow and message files, and a license. No code, macros, API, subscription, or special software required.</p>
+
+        <div class="steps" aria-labelledby="steps-heading">
+          <h2 id="steps-heading">Start with the situation, then make the message yours.</h2>
+          <div class="step-grid">
+            <article class="step"><h3>Choose the closest real scenario.</h3><p>Do not force a pitch, follow-up, scope note, or payment message into a conversation where it does not belong.</p></article>
+            <article class="step"><h3>Replace every placeholder.</h3><p>Remove irrelevant lines and rewrite the message in your own voice before sending it.</p></article>
+            <article class="step"><h3>Verify the facts and terms.</h3><p>Check recipients, observations, claims, dates, deliverables, rights, fees, invoice details, and status.</p></article>
+            <article class="step"><h3>Keep the written record.</h3><p>Save agreed scope, approvals, changes, invoices, and final messages so the conversation does not depend on memory.</p></article>
+          </div>
+        </div>
+
+        <div class="section-action">
+          <a class="button button-paid" href="https://www.patreon.com/Userwang/posts/creator-brand-25-163665957" aria-label="Get the complete 25-message Creator Brand Deal Outreach Kit for $5 on Patreon">Get the Complete Kit — $5</a>
+          <p class="microcopy">$5 one-time purchase on Patreon. No subscription.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="limits" aria-labelledby="limits-heading">
+      <div class="shell limits">
+        <svg class="shield" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5 51 13v16c0 13-8 23-19 30C21 52 13 42 13 29V13z"/><polyline points="22,32 29,39 43,23"/></svg>
+        <div>
+          <h2 id="limits-heading">Built for accurate, human-reviewed outreach</h2>
+          <p>Every message must be adapted to your real audience, evidence, scope, country, platform rules, and agreement. Do not invent familiarity, product use, results, introductions, deadlines, testimonials, urgency, payment status, or campaign performance.</p>
+          <p>This kit is not legal, tax, accounting, collections, or platform-policy advice. It does not guarantee replies, brand deals, payment, renewal, a particular rate, or income.</p>
+          <p>Created by the seller, AI-assisted by the user, and manually reviewed for the supplied use case.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="final-heading">
+      <div class="shell final-cta">
+        <h2 id="final-heading">Start with five samples. Upgrade only if the workflow fits.</h2>
+        <p>Download the free preview to test the editing style on a real scenario. If you want the complete 25-message library and the supporting worksheets, get the one-time $5 kit on Patreon.</p>
+        <div class="final-actions">
+          <a class="button button-paid" href="https://www.patreon.com/Userwang/posts/creator-brand-25-163665957" aria-label="Get the complete 25-message Creator Brand Deal Outreach Kit for $5 on Patreon">Get the Complete Kit — $5</a>
+          <a class="button button-free" href="https://github.com/jz-nobody/creator-brand-deal-outreach-kit-preview/releases/download/free-preview-v1.0.0/creator-brand-deal-outreach-free-preview.zip" aria-label="Download 5 free creator brand-deal message samples from GitHub">Download 5 Free Samples</a>
+        </div>
+        <p class="microcopy">No subscription. No result claims. Replace every placeholder and verify every fact before use.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p>Creator Brand Deal Outreach Kit — 25 editable messages and practical worksheets for independent creators.</p>
+      <p>$5 one-time purchase on Patreon. Five free samples available from the public GitHub Release.</p>
+      <p>Created by the seller, AI-assisted by the user, and manually reviewed.</p>
+    </div>
+  </footer>
+
+  <script>
+    const samples = [
+      {
+        title: "Open with a verified reason to talk.",
+        use: "Use when: You have a specific concept and can substantiate why it may fit the brand.",
+        message: "Subject: A practical [content format] idea for [Brand]\n\nHi [Name or Brand team],\n\nI create [content format] for [specific audience] who care about [topic or problem]. While reviewing [public source, product page, or campaign], I noticed [one accurate and relevant observation].\n\nI would like to propose one [deliverable] about [specific concept], published on [channel] during [realistic date window]. The idea is designed to help your team communicate [campaign objective] without making claims I cannot verify.\n\nIf this fits your current priorities, may I send a three-point outline, my current audience context, and a clearly defined scope?\n\nBest,\n[Your name]\n[Portfolio or creator profile]"
+      },
+      {
+        title: "Follow up once without manufacturing urgency.",
+        use: "Use when: You sent a real first message and can reference its actual date.",
+        message: "Subject: Re: [original subject]\n\nHi [Name],\n\nI am following up once on the collaboration idea I sent on [actual date]. The quick version is:\n\n• audience and channel: [specific audience] on [channel];\n• proposed piece: [one deliverable and concept];\n• possible timing: [date window].\n\nIf this is relevant, I can send a concise scope for review. If it is not a priority, feel free to say ‘not this time,’ and I will close the loop.\n\nBest,\n[Your name]"
+      },
+      {
+        title: "Put scope, rights, fee, and timing in writing.",
+        use: "Use when: A brand is interested, but the commercial details still need written confirmation.",
+        message: "Subject: Please confirm the scope and fee for [Campaign]\n\nHi [Name],\n\nBefore I schedule the work, here is my understanding of the proposed collaboration:\n\n• deliverable: [quantity, format, channel, and length];\n• due dates: draft [date]; final or publication [date];\n• included revisions: [number and boundaries];\n• usage: [organic or paid use, channels, territory, and end date];\n• exclusivity: [category and exact period, or none];\n• creator fee: [currency and amount], with payment due [number] days after [agreed trigger].\n\nPlease reply with ‘confirmed’ or identify the line that needs correction. I will begin only after the final scope is confirmed in writing.\n\nBest,\n[Your name]"
+      },
+      {
+        title: "Decline the scope or offer a smaller one.",
+        use: "Use when: The budget is clear, but it does not support the requested scope.",
+        message: "Subject: Scope options for [Campaign]\n\nHi [Name],\n\nThank you for sharing the [currency and amount] budget. I cannot take on the current combination of [deliverables], [usage rights], and [exclusivity or timeline] at that amount.\n\nIf useful, I can offer one of these paths:\n\n1. a smaller scope at the stated budget: [one deliverable], [one revision], and [limited organic use with a defined term]; or\n2. the original scope for [your supported quote], subject to final written terms.\n\nIf neither option fits, I will decline this campaign, but I appreciate the clear budget information.\n\nBest,\n[Your name]"
+      },
+      {
+        title: "Suggest a next test from observed facts.",
+        use: "Use when: The agreed reporting window has ended and you have evidence with a known source.",
+        message: "Subject: A next test after [Campaign]\n\nHi [Name],\n\nThank you for the work on [Campaign]. After the agreed reporting window, I recorded these factual takeaways:\n\n• [metric] was [value] during [date range], measured in [platform report or other source];\n• audience feedback repeatedly mentioned [observed question or theme];\n• production learning: [one specific delivery, approval, or scope lesson].\n\nBased on those observations—not a performance promise—a useful next test could be [new concept] for [audience or channel]. I would scope it as [deliverables], with [usage, revision, timing, or exclusivity change] confirmed before work begins.\n\nBest,\n[Your name]"
+      }
+    ];
+
+    const tabs = Array.from(document.querySelectorAll(".sample-tab"));
+    const panel = document.getElementById("sample-panel");
+    const title = document.getElementById("sample-title");
+    const use = document.getElementById("sample-use");
+    const message = document.getElementById("sample-message");
+
+    function selectSample(index, focusPanel = false) {
+      tabs.forEach((tab, tabIndex) => {
+        const selected = tabIndex === index;
+        tab.setAttribute("aria-selected", String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+      });
+      panel.setAttribute("aria-labelledby", tabs[index].id);
+      title.textContent = samples[index].title;
+      use.textContent = samples[index].use;
+      message.textContent = samples[index].message;
+      if (focusPanel) panel.focus();
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => selectSample(index));
+      tab.addEventListener("keydown", (event) => {
+        if (!['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        let next = index;
+        if (event.key === 'ArrowDown' || event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+        if (event.key === 'Home') next = 0;
+        if (event.key === 'End') next = tabs.length - 1;
+        selectSample(next);
+        tabs[next].focus();
+      });
+    });
+
+    selectSample(0);
+  </script>
+</body>
+</html>

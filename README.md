@@ -2,6 +2,8 @@
 
 Five short, editable message samples for independent creators handling a brand conversation from first contact to a possible renewal.
 
+[View the interactive product page](https://jz-nobody.github.io/creator-brand-deal-outreach-kit-preview/)
+
 [Download all five samples as a ZIP](https://github.com/jz-nobody/creator-brand-deal-outreach-kit-preview/releases/download/free-preview-v1.0.0/creator-brand-deal-outreach-free-preview.zip)
 
 ## What is included
